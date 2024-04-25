@@ -36,17 +36,6 @@ void Herbivore::paint(QPainter *painter, const QStyleOptionGraphicsItem *option,
 
     painter->drawEllipse(QRectF(-2, -22, 4, 4));
 
-    // painter->setBrush(Qt::darkYellow);
-    // painter->drawEllipse(-17, -12, 16, 16);
-    // painter->drawEllipse(1, -12, 16, 16);
-
-    // QPainterPath path(QPointF(0, 22));
-    // path.cubicTo(-5, 24, -5, 24, 0, 27);
-    // path.cubicTo(5, 29, 5, 34, 0, 30);
-    // path.cubicTo(-5, 34, -5, 44, 0, 37);
-    // painter->setBrush(Qt::NoBrush);
-    // painter->drawPath(path);
-
     Q_UNUSED(option);
     Q_UNUSED(widget);
 };

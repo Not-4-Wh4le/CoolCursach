@@ -59,7 +59,6 @@ void MainWindow:: createNewFood(){
 
 void MainWindow:: behavior(){
     for(auto animal : animalList){
-        //QLineF lineToTarget(animal->mapToParent(QPoint(0,0)), animal->mapFromScene(animal->closestFood));
         animal->rotate();
         animal->move();
         if(animal->x() < 0){
@@ -74,24 +73,6 @@ void MainWindow:: behavior(){
         else if (animal->y() > scene->height()){
             animal->setY(animal->y() - 5);
         }
-        //qDebug() << animal->closestFood;
-        // qreal angleToTarget = ::acos(lineToTarget.dx() / lineToTarget.length());
-        // if (lineToTarget.dy() < 0)
-        //     angleToTarget = 2* M_PI - angleToTarget;
-        // angleToTarget = normalizeAngle((M_PI - angleToTarget) + M_PI / 2);
-
-        // // Поворачиваем героя к цели
-        // if (angleToTarget >= 0 && angleToTarget < M_PI) {
-        //     // Rotate left
-        //     setRotation(rotation() - angleToTarget * 180 /M_PI);
-        // } else if (angleToTarget <= 2*M_PI && angleToTarget > M_PI) {
-        //     // Rotate right
-        //     setRotation(rotation() + (angleToTarget - 2* M_PI )* (-180) /M_PI);
-        // }
-       // if(lineToTarget.length() > 5){
-         //   animal->setPos(animal->mapToParent(0, -2));
-            //->setPos(mapToParent(0, -2));
-        //}ё
 
         Food *closestFood = nullptr;
         qreal minDist = scene->height() * scene->height() + scene->width() * scene->width();
@@ -107,7 +88,6 @@ void MainWindow:: behavior(){
             }
         }
         if(closestFood!=nullptr){
-            //QPointF point(closestFood->x() - animal->x(), closestFood->y() - animal->y());
             QPointF point(closestFood->x(), closestFood->y());
             animal->closestFood = point;
             if (minDist < 625){

@@ -32,7 +32,6 @@ private:
     qreal energyForFission = 6;
     int age;
     qreal speed = 1;
-    //qreal rotation;
     qreal vision = 100;
 
 public slots:
