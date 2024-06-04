@@ -21,3 +21,6 @@ void Food::paint(QPainter *painter, const QStyleOptionGraphicsItem *option, QWid
     Q_UNUSED(widget);
 };
 
+void Food:: eatFood(){
+    isEaten = true;
+}

@@ -2,11 +2,7 @@
 #define MAINWINDOW_H
 
 #include <QMainWindow>
-#include <QTimer>
-#include <QGraphicsScene>
-#include <QTime>
-#include "food.h"
-#include "herbivore.h"
+#include "animalscene.h"
 
 QT_BEGIN_NAMESPACE
 namespace Ui {
@@ -24,18 +20,18 @@ public:
 
 private:
     Ui::MainWindow *ui;
-    QGraphicsScene *scene;
-    QTimer *timer;
-    QTime lastFood;
-    void createNewFood();
-    void behavior();
-    QList<Food*> foodList;
-    QList<Herbivore*> animalList;
+    AnimalScene *scene;
 
 private slots:
-    void on_startBtn_clicked();
-    void slotTimer();
+               /// void addFood();
+    void updateMutationChanceLabel(int);
+    void on_startButton_clicked();
 
+public slots:
+    void completeSlot();
+
+signals:
+    void startSignal(int, int, int, int);
 };
 
 

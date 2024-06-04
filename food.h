@@ -12,13 +12,16 @@ class Food : public QObject, public QGraphicsItem
 public:
     explicit Food(QObject *parent = nullptr);
     ~Food();
-
+    bool isEaten = false;
+    void eatFood();
+    bool isOld(){return time;}
 
 signals:
 
 private:
     QRectF boundingRect() const;
     void paint(QPainter *painter, const QStyleOptionGraphicsItem *option, QWidget *widget);
+    int time;
 
 public slots:
 };
