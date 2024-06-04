@@ -8,7 +8,7 @@
 
 Блок-схема алгоритма, реализующего реализующего построение графиков
 Применяется в proj/populationcharts.h в функциях PopulationCharts:: updateBarSet, PopulationCharts:: updateCharts и PopulationCharts::PopulationCharts
- <img width="527" alt="блоксхема13" src="https://github.com/Not-4-Wh4le/CoolCursach/assets/168145293/38cc6563-d41c-4b61-b813-4a7092e17859">
+<img width="527" alt="блоксхема13" src="https://github.com/Not-4-Wh4le/CoolCursach/assets/168145293/38cc6563-d41c-4b61-b813-4a7092e17859">
 
 
 Блок-схема алгоритма, реализующего реализующего поведение бактерий
@@ -23,4 +23,5 @@
 
 Блок-схема алгоритма, реализующего движение бактерий
 Применяется в proj/animalBase.h в функциях AnimalBase::rotate, AnimalBase:: move
+
 <img width="527" alt="блоксхема16" src="https://github.com/Not-4-Wh4le/CoolCursach/assets/168145293/ecafd157-9c1d-423a-adda-80330208b1bf">
